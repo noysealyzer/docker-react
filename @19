@@ -1,0 +1,20 @@
+25_9_19 - 'npm run test/build/start' - IO, wobei: das Logo ist jetzt anders als früher?
+9:51 - 'docker build -f Dockerfile.dev .'<vorher 'node_modules' löschen> braucht länger als im Kurs u.zeigt andere Warnings!
+10:15 - 'localhost:3000' - IO. - .'-v /app/node_modules' - a placeholder for this directory whithin the Container<no ':' means not outside>
+12:56 - 'docker-compose up' würde 'COPY . .' ersetzen, aber es ist angeraten, es bestehen zu lassen - s.Kurs-76
+13:14 - Testgrundlage ist d.Image, das man über den 'docker build -f Dockerfile.dev .' erhält
+        'docker run -it 36ff1a4142a3 npm run test' - ohne '-it' kein STDIN !      
+13:30 - Tests mit 'docker-compose up --build' verlangen 2.ten 'service'
+13:37 - 'docker exec it 05146e1308b0 sh'  - nicht 'docker attach' !
+15:27 - https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/lecture/11437094#overview - 4:20 - 2 base images<'multi step build'>
+15:32 - https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/lecture/11437096#overview - 1:52 - no need for volumes any more.. .
+15:41 - 'docker run -p 8080:80 e92d8dc94813' - IO. - .<<<<<<<<<<<<<<<< https://github.com/noysealyzer/docker-react.git >>>>>>>>>>>>>>>>>
+15:49 - 'git init' - 'git add .' - git commit -m "initial commit" -- git remote add origin git@github.com:noysealyzer/docker-react.git
+        bezieht s.auf https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11437120#overview - 2:47 
+        'git push origin master' - fatal: 'git@github.com/noysealyzer/docker-react.git' does not appear to be a git repository
+Vorsicht! ':' zw.'git@github.com:noysealyzer'
+
+28_9_19 - das alte Leiden: '@19' gehört nicht zum Projekt u.alle Änderungen darin werden von 'git commit' erfasst u.würden ein 'git add .' verlangen
+20:46 - deshalb geht dieses Kommentar-File nach 'frontend-outside'. - .frontend selbst wird auf Github gelöscht und neu erstellt<gemäß Kurs-57> !!
+20:55 - um <neuerlich>'git init' verwenden zu können, muß man d.<versteckten>Ordner '.git' im Finder löschen !
+

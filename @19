@@ -16,5 +16,10 @@ Vorsicht! ':' zw.'git@github.com:noysealyzer'
 
 28_9_19 - das alte Leiden: '@19' gehört nicht zum Projekt u.alle Änderungen darin werden von 'git commit' erfasst u.würden ein 'git add .' verlangen
 20:46 - deshalb geht dieses Kommentar-File nach 'frontend-outside'. - .frontend selbst wird auf Github gelöscht und neu erstellt<gemäß Kurs-57> !!
-20:55 - um <neuerlich>'git init' verwenden zu können, muß man d.<versteckten>Ordner '.git' im Finder löschen !
-
+20:55 - um <neuerlich>'git init' verwenden zu können, muß man d.<versteckten>Ordner '.git' im Finder löschen ! dann: git init/add ./commit !!!
+21:04 - jetzt hat 'git add remote' u.'git push' funktioniert u.weiter geht's mit https://travis-ci.org/ - hab 'mit github' gewählt: 
+        'We're only showing your public repositories. You can find your private projects on travis-ci.com'<travis projects>! 
+21:23 - Kurs-90: <verlangt unterhalb>script:<eingerückt> - docker run -e CI=true USERNAME/docker-react npm run test
+21:28 - https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11437130#overview 2:30 
+        'docker run IMAGE npm run test -- --coverage' wird evtl nur f.einen <pre>Travis-Testlauf verwendet ?
+        

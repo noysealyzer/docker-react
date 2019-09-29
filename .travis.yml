@@ -4,5 +4,18 @@ services:
 
 before_install:
   - docker build -t tvccava/docker-react -f Dockerfile.dev .  
+
 script:
   - docker run -e CI=true tvccava/docker-react npm run test  
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-react"
+  env: "DockerReact-env"
+  bucket_name: "elasticbeanstalk-us-east-1-603099670508"
+  bucket_path: "docker-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"  
